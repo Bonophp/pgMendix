@@ -1,0 +1,271 @@
+/* === Reset básico === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9fb;
+  color: #333;
+}
+
+body p{
+  margin-left: 10px;
+}
+
+body ul{
+  margin-left: 10px;
+}
+
+/* === Encabezado === */
+.header-container {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 50px;
+  background-color: #3b82f6;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.header-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header-container p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* === Navegación === */
+.nav {
+  margin: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(59,130,246,0.07);
+  padding: 1px 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #3b82f6;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #042282;
+}
+
+/* === Títulos y secciones === */
+section {
+  margin: 40px 0;
+}
+
+section h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1f2937;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin: 15px 0;
+  color: #374151;
+  text-align: center;
+}
+
+section p {
+    font-size: 1rem;
+    color: #4b5563;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* === Imágenes === */
+.imgMain {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Listas === */
+ol, ul {
+  margin: 15px 0 20px 25px;
+}
+
+ol li, ul li {
+  margin-bottom: 10px;
+}
+
+/* === Casos de uso destacados === */
+ol li strong {
+  color: #2563eb;
+  font-size: 1.05rem;
+}
+
+/* === Enlace especial === */
+a.pagina {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 16px;
+  background: #3b82f6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+  margin-left: 10px;
+}
+
+a.pagina:hover {
+  background: #4062d2;
+}
+
+/* === Textos especiales === */
+.referencia, .meaningTxt {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.referencia {
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+}
+
+/* Estilo general de la lista */
+ul {
+  list-style: none; 
+  padding: 0;
+  margin: 1rem 0;
+}
+
+/* Cada recurso */
+ul li {
+  background: #dce6fc; 
+  border: 1px solid #e0e0e5;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+ul li:hover {
+  background: #f4f4ff; 
+  border-color: #4f6ee1;
+  transform: translateX(5px);
+}
+
+/* Enlaces */
+ul li a {
+  text-decoration: none;
+  color: #978aef;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+ul li a:hover {
+  color: #3b5bdb; /* azul Cupertino */
+}
+
+
+.footer p {
+  text-align: center;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #ebedf2;
+  border-top: 1px solid #e5e7eb;
+  margin-bottom: 40px;
+}
+
+/* === Modo Oscuro === */
+.theme-switch {
+  text-align: center ;
+  margin: 10px 30px 0 0;
+}
+
+body.dark-mode {
+  background-color: #18181b;
+  color: #e5e7eb;
+}
+
+body.dark-mode .header-container {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+body.dark-mode .nav {
+  background: #23272f;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.15);
+}
+
+body.dark-mode .nav a {
+  color: #a5b4fc;
+}
+
+body.dark-mode .nav a.active {
+  background: #6366f1;
+  color: #fff;
+}
+
+body.dark-mode section {
+  background: transparent;
+}
+
+body.dark-mode .footer {
+  background: #23272f;
+  color: #e5e7eb;
+}
+
+body.dark-mode ul li {
+  background: #23272f;
+  border-color: #6366f1;
+}
+
+body.dark-mode ul li a {
+  color: #a5b4fc;
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+  color: #f3f4f6;
+}
+
+body.dark-mode p {
+  color: gray;
+}
+
+body.dark-mode .meaningTxt {
+  text-align: center;
+}
